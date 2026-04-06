@@ -1,6 +1,7 @@
 import { Delete } from 'lucide-react';
 import React from 'react';
 
+
 const SelectedCard = ({player, removePlayer}) => {
     // console.log(player);
     const handleRemove = () => {
@@ -12,7 +13,7 @@ const SelectedCard = ({player, removePlayer}) => {
             <div className='flex items-center gap-4 '>
                 <img className='w-20 rounded-box' src={player.Image} alt="" />
                 <div className=''>
-                   <h1 className='font-bold text-xl mb-2'>{player.Name}</h1>
+                   <h1 className='font-bold text-md md:text-xl mb-2'>{player.Name}</h1>
                    <p className='font-normal text-xs'>{player.Playing}</p>
                 </div>
             </div>

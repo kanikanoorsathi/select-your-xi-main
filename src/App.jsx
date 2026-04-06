@@ -5,6 +5,7 @@ import AvailablePlayers from './Component/AvailablePlayers/AvailablePlayers'
 import Navbar from './Component/Header/Navbar'
 import Banner from './Component/Hero/banner'
 import SelectedPlayers from './Component/SelectedPlayers/SelectedPlayers'
+import { ToastContainer, toast } from 'react-toastify';
 
 const fetchPlayers = async () =>{
   const res = await fetch("/players.json")
@@ -15,7 +16,7 @@ const playersPromiser = fetchPlayers();
 function App() {
 
   const [toggle, setToggle] =useState(true);
-  const [availableBalance, setAvailableBalance] = useState(980000);
+  const [availableBalance, setAvailableBalance] = useState(4900000);
   const [purchasedPlayers, setPurchasedPlayers] = useState([]);
   // console.log(purchasedPlayers);
 
@@ -25,16 +26,18 @@ function App() {
     if(!playerToRemover) return;
     setPurchasedPlayers(prev => prev.filter(player => player.id !== id));
     setAvailableBalance(prev => prev + playerToRemover.price)
+    toast.success("You deleted your Player!");
+    return;
 
   };
   
 
 
   return (
-    <main className='px-20 space-y-10 mb-10'>
+    <main className='px-2 md:px-20 space-y-10 mb-10'>
       <Navbar availableBalance={availableBalance}></Navbar>
       <Banner></Banner>
-      <div className='flex flex-1 md:flex-2 flex-wrap gap-4 md:justify-between items-center p-2'>
+      <div className='flex flex-1 md:flex-2 flex-wrap gap-4 justify-center md:justify-between items-center p-2'>
         <div>
           <h1 className='font-bold text-2xl'>{
               toggle === true? "Available players" : `Selected Players(${purchasedPlayers.length}/6)`
@@ -52,6 +55,7 @@ function App() {
         <AvailablePlayers purchasedPlayers={purchasedPlayers} setPurchasedPlayers={setPurchasedPlayers} availableBalance={availableBalance} setAvailableBalance={setAvailableBalance} playersPromiser={playersPromiser}></AvailablePlayers>
       </Suspense> :  <SelectedPlayers removePlayer={removePlayer} purchasedPlayers={purchasedPlayers}></SelectedPlayers>
       }
+       <ToastContainer />
       
      
     </main>
