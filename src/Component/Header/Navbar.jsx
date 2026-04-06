@@ -2,10 +2,11 @@ import React from "react";
 import logo from "../../assets/logo.png"
 import dollar from "../../assets/Currency.jpg"
 
-const Navbar = () => {
+const Navbar = ({ availableBalance }) => {
+  // console.log(availableBalance);
   return (
     <div>
-      <div className="max-lg:collapse bg-base-200 shadow-sm w-full rounded-md">
+      <div className=" bg-base-200 shadow-sm w-full rounded-md ">
         <input id="navbar-1-toggle" className="peer hidden" type="checkbox" />
         <label
           htmlFor="navbar-1-toggle"
@@ -51,7 +52,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar-end flex justify-end items-center gap-3">
-            <span>0</span><span>Coin</span>
+            <span className="font-bold">{availableBalance}</span><span>Coin</span>
             <img src={dollar} alt="" />
           </div>
         </div>

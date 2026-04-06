@@ -1,6 +1,7 @@
 [
   {
     "Image": "https://i.ibb.co/ZzJ0pTjt/images.jpg",
+    "id": "1",
     "Name": "Shakib Al Hasan",
     "country": "Bangladesh",
     "Playing": "All-rounder",
@@ -11,6 +12,7 @@
   },
   {
     "Image": "https://i.ibb.co/Rp1YBxHV/images.jpg",
+    "id": "2",
     "Name": "Tamim Iqbal",
     "country": "Bangladesh",
     "Playing": "Batsman",
@@ -21,6 +23,7 @@
   },
   {
     "Image": "https://i.ibb.co/LDDFJRQY/Andre-Russell.jpg",
+    "id": "3",
     "Name": "Andre Russell",
     "country": "West Indies",
     "Playing": "All-rounder",
@@ -31,6 +34,7 @@
   },
   {
     "Image": "https://i.ibb.co/nZ2qKXr/image-45-700x700.jpg",
+    "id": "4",
     "Name": "Faf du Plessis",
     "country": "South Africa",
     "Playing": "Batsman",
@@ -41,6 +45,7 @@
   },
   {
     "Image": "https://i.ibb.co/fdxD8xK6/320448.png",
+    "id": "5",
     "Name": "Babar Azam",
     "country": "Pakistan",
     "Playing": "Batsman",
@@ -51,6 +56,7 @@
   },
   {
     "Image": "https://i.ibb.co/Q3Z5sLKw/images-1.jpg",
+    "id": "6",
     "Name": "Rashid Khan",
     "country": "Afghanistan",
     "Playing": "Bowler",
@@ -61,6 +67,7 @@
   },
   {
     "Image": "https://i.ibb.co/fVL15wMB/images.jpg",
+    "id": "7",
     "Name": "David Miller",
     "country": "South Africa",
     "Playing": "Batsman",
@@ -71,6 +78,7 @@
   },
   {
     "Image": "https://i.ibb.co/B2vMMzQ7/images-1.jpg",
+    "id": "8",
     "Name": "Mushfiqur Rahim",
     "country": "Bangladesh",
     "Playing": "Wicketkeeper-batsman",
@@ -81,6 +89,7 @@
   },
   {
     "Image": "https://i.ibb.co/Dgjb0st1/Sunil-Narine.jpg",
+    "id": "9",
     "Name": "Sunil Narine",
     "country": "West Indies",
     "Playing": "All-rounder",
@@ -91,6 +100,7 @@
   },
   {
     "Image": "https://i.ibb.co/fJDS9xq/197-camedia.png",
+    "id": "10",
     "Name": "Jos Buttler",
     "country": "England",
     "Playing": "Wicketkeeper-batsman",
@@ -101,6 +111,7 @@
   },
   {
     "Image": "https://i.ibb.co/wNDXVL6t/images-2.jpg",
+    "id": "11",
     "Name": "Mustafizur Rahman",
     "country": "Bangladesh",
     "Playing": "Bowler",
@@ -111,6 +122,7 @@
   },
   {
     "Image": "https://i.ibb.co/TMQQfSGJ/skysports-glenn-maxwell-australia-6352082.jpg",
+    "id": "12",
     "Name": "Glenn Maxwell",
     "country": "Australia",
     "Playing": "All-rounder",
