@@ -1,0 +1,122 @@
+[
+  {
+    "Image": "https://i.ibb.co/ZzJ0pTjt/images.jpg",
+    "Name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "Playing": "All-rounder",
+    "batting": "Left-hand bat",
+    "bowling": "Slow left-arm orthodox",
+    "rating": 9.5,
+    "price": 850000
+  },
+  {
+    "Image": "https://i.ibb.co/Rp1YBxHV/images.jpg",
+    "Name": "Tamim Iqbal",
+    "country": "Bangladesh",
+    "Playing": "Batsman",
+    "batting": "Left-hand bat",
+    "bowling": "Right-arm medium",
+    "rating": 8.9,
+    "price": 720000
+  },
+  {
+    "Image": "https://i.ibb.co/LDDFJRQY/Andre-Russell.jpg",
+    "Name": "Andre Russell",
+    "country": "West Indies",
+    "Playing": "All-rounder",
+    "batting": "Right-hand bat",
+    "bowling": "Right-arm fast",
+    "rating": 9.7,
+    "price": 950000
+  },
+  {
+    "Image": "https://i.ibb.co/nZ2qKXr/image-45-700x700.jpg",
+    "Name": "Faf du Plessis",
+    "country": "South Africa",
+    "Playing": "Batsman",
+    "batting": "Right-hand bat",
+    "bowling": "Right-arm leg break",
+    "rating": 8.7,
+    "price": 680000
+  },
+  {
+    "Image": "https://i.ibb.co/fdxD8xK6/320448.png",
+    "Name": "Babar Azam",
+    "country": "Pakistan",
+    "Playing": "Batsman",
+    "batting": "Right-hand bat",
+    "bowling": "Right-arm off break",
+    "rating": 9.3,
+    "price": 900000
+  },
+  {
+    "Image": "https://i.ibb.co/Q3Z5sLKw/images-1.jpg",
+    "Name": "Rashid Khan",
+    "country": "Afghanistan",
+    "Playing": "Bowler",
+    "batting": "Right-hand bat",
+    "bowling": "Right-arm leg break googly",
+    "rating": 9.6,
+    "price": 880000
+  },
+  {
+    "Image": "https://i.ibb.co/fVL15wMB/images.jpg",
+    "Name": "David Miller",
+    "country": "South Africa",
+    "Playing": "Batsman",
+    "batting": "Left-hand bat",
+    "bowling": "Right-arm off break",
+    "rating": 8.5,
+    "price": 600000
+  },
+  {
+    "Image": "https://i.ibb.co/B2vMMzQ7/images-1.jpg",
+    "Name": "Mushfiqur Rahim",
+    "country": "Bangladesh",
+    "Playing": "Wicketkeeper-batsman",
+    "batting": "Right-hand bat",
+    "bowling": "None",
+    "rating": 8.8,
+    "price": 650000
+  },
+  {
+    "Image": "https://i.ibb.co/Dgjb0st1/Sunil-Narine.jpg",
+    "Name": "Sunil Narine",
+    "country": "West Indies",
+    "Playing": "All-rounder",
+    "batting": "Left-hand bat",
+    "bowling": "Right-arm off break",
+    "rating": 9.1,
+    "price": 780000
+  },
+  {
+    "Image": "https://i.ibb.co/fJDS9xq/197-camedia.png",
+    "Name": "Jos Buttler",
+    "country": "England",
+    "Playing": "Wicketkeeper-batsman",
+    "batting": "Right-hand bat",
+    "bowling": "None",
+    "rating": 9.4,
+    "price": 920000
+  },
+  {
+    "Image": "https://i.ibb.co/wNDXVL6t/images-2.jpg",
+    "Name": "Mustafizur Rahman",
+    "country": "Bangladesh",
+    "Playing": "Bowler",
+    "batting": "Left-hand bat",
+    "bowling": "Left-arm fast-medium",
+    "rating": 8.6,
+    "price": 700000
+  },
+  {
+    "Image": "https://i.ibb.co/TMQQfSGJ/skysports-glenn-maxwell-australia-6352082.jpg",
+    "Name": "Glenn Maxwell",
+    "country": "Australia",
+    "Playing": "All-rounder",
+    "batting": "Right-hand bat",
+    "bowling": "Right-arm off break",
+    "rating": 9.2,
+    "price": 870000
+  }
+]
