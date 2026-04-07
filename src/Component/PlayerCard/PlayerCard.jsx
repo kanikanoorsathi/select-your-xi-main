@@ -7,11 +7,11 @@ const PlayerCard = ({player, setAvailableBalance, availableBalance, purchasedPla
     const [isSelected, setIsSelected] = useState(false);
     const handleSelected = (playerData) =>{
       if(availableBalance <playerData.price){
-        toast.success("Not enough coins!");
+        toast.error("Not enough coins!");
         return;
       }
       if(purchasedPlayers.length === 6){
-        toast.success("6 players already selected!");
+        toast.warning("6 players already selected!");
         return;
       }
       setIsSelected(true) 
@@ -20,8 +20,8 @@ const PlayerCard = ({player, setAvailableBalance, availableBalance, purchasedPla
       setPurchasedPlayers([...purchasedPlayers,playerData]);
     };
   return (
-    <div>
-      <div>
+    <div >
+      <div className="pb-4 md:pb-20">
         <div className="card bg-base-100 shadow-lg mb-6">
           <figure>
             <img

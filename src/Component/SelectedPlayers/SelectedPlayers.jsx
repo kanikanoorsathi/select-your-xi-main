@@ -7,13 +7,14 @@ const SelectedPlayers = ({purchasedPlayers, removePlayer}) => {
     return (
         <div>
             {/* Selected */}
-            <div className=''>
+            <div className='pb-5 md:pb-30'>
                 <div>
                     {/* left */}
                     {
                        purchasedPlayers.map(player=><SelectedCard key={player.id} removePlayer={removePlayer} player={player}></SelectedCard>)
                     }
                 </div>
+                <a href="/"><button className=' btn btn-outline bg-white text-black hover:bg-yellow-300'>Add More Player</button></a>
                 
             </div>
         </div>

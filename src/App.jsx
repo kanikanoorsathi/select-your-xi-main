@@ -1,11 +1,14 @@
 
 import { Suspense, useState } from 'react'
 import './App.css'
+import 'react-toastify/dist/ReactToastify.css';
 import AvailablePlayers from './Component/AvailablePlayers/AvailablePlayers'
 import Navbar from './Component/Header/Navbar'
 import Banner from './Component/Hero/banner'
 import SelectedPlayers from './Component/SelectedPlayers/SelectedPlayers'
 import { ToastContainer, toast } from 'react-toastify';
+import NewsLetter from './Component/NewsLetter/NewsLetter'
+import Footer from './Component/Footer/Footer'
 
 const fetchPlayers = async () =>{
   const res = await fetch("/players.json")
@@ -16,17 +19,18 @@ const playersPromiser = fetchPlayers();
 function App() {
 
   const [toggle, setToggle] =useState(true);
-  const [availableBalance, setAvailableBalance] = useState(4900000);
+  const [availableBalance, setAvailableBalance] = useState(49000000);
   const [purchasedPlayers, setPurchasedPlayers] = useState([]);
   // console.log(purchasedPlayers);
 
   const removePlayer = (id) =>{
-    // console.log(id);
+    console.log("clicked", id);
     const playerToRemover = purchasedPlayers.find(player => player.id === id);
     if(!playerToRemover) return;
     setPurchasedPlayers(prev => prev.filter(player => player.id !== id));
     setAvailableBalance(prev => prev + playerToRemover.price)
     toast.success("You deleted your Player!");
+    // alert("You deleted your Player!")
     return;
 
   };
@@ -37,6 +41,7 @@ function App() {
     <main className='px-2 md:px-20 space-y-10 mb-10'>
       <Navbar availableBalance={availableBalance}></Navbar>
       <Banner></Banner>
+          <ToastContainer position='top-center' />
       <div className='flex flex-1 md:flex-2 flex-wrap gap-4 justify-center md:justify-between items-center p-2'>
         <div>
           <h1 className='font-bold text-2xl'>{
@@ -50,12 +55,18 @@ function App() {
 
         </div>
       </div>
+  
       {
+        
         toggle === true ? <Suspense fallback={<span className="loading loading-ring loading-xl"></span>}>
         <AvailablePlayers purchasedPlayers={purchasedPlayers} setPurchasedPlayers={setPurchasedPlayers} availableBalance={availableBalance} setAvailableBalance={setAvailableBalance} playersPromiser={playersPromiser}></AvailablePlayers>
       </Suspense> :  <SelectedPlayers removePlayer={removePlayer} purchasedPlayers={purchasedPlayers}></SelectedPlayers>
+      
       }
-       <ToastContainer />
+  
+       <ToastContainer></ToastContainer>
+       <NewsLetter></NewsLetter>
+       <Footer></Footer>
       
      
     </main>
